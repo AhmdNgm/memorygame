@@ -1,0 +1,32 @@
+.card {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border: 5px solid #EF5350;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.card .front {
+  transform:rotateX(90deg);
+  position: absolute;
+  transition: all 0.2s ease-in;
+}
+.flipped .front {
+  transform: rotateX(0deg);
+  transition-delay: 0.2s;
+}
+.card .cover {
+  transition: all 0.2s ease-in;
+  transition-delay: 0.2s;
+}
+.flipped .cover {
+  transform: rotateX(90deg);
+  transition-delay: 0s;
+}
